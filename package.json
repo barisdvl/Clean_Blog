@@ -1,0 +1,26 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "patika.dev clean blog project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barisdvl/Clean_Blog.git"
+  },
+  "keywords": [
+    "clean",
+    "blog"
+  ],
+  "author": "Baris Develi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barisdvl/Clean_Blog/issues"
+  },
+  "homepage": "https://github.com/barisdvl/Clean_Blog#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
