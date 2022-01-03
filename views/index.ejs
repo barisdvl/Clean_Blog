@@ -32,7 +32,7 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-0 mx-auto">
 
         <% for (let i=0; i<posts.length; i++) { %>
 
@@ -43,11 +43,11 @@
               <%= posts[i].title %>
             </h2>
             <h3 class="post-subtitle">
-              <%= posts[i].detail %>
+              <%= posts[i].detail.substring(0,500) %>...
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
+            <a href="/posts/<%= posts[i]._id %>">Start Bootstrap</a>
             on <%= posts[i].dateCreated %></p>
         </div>
         <hr>
