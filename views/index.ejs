@@ -47,15 +47,34 @@
             </h3>
           </a>
           <p class="post-meta">Posted by
-            <a href="/posts/<%= posts[i]._id %>">Start Bootstrap</a>
+            <a href="/posts/<%= posts[i]._id %>">Baris D.</a>
             on <%= posts[i].dateCreated %></p>
         </div>
         <hr>
         <% } %>
         <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+        <div>
+          <% if ( pages > 0) { %>
+
+          <ul class="nav tm-paging-links">
+
+              <% for (i=1; i <=pages; i++) { %>
+                  <% if(i == current) { %>                                   
+
+                      <li class="nav-item active"><a href="/?page=<%= i %>" class="nav-link tm-paging-link"><%= i %></a></li>
+                                                      
+                  <% } else if(i < pages) { %> 
+                      <li class="nav-item"><a href="/?page=<%= i %>" class="nav-link tm-paging-link"><%= i %></a></li>
+                  <% } else { %> 
+                      <li class="nav-item"><a href="/?page=<%= i %>" class="nav-link tm-paging-link">></a></li>
+                  <% } %>  
+
+              <% } %>    
+          </ul>
+
+          <% } %>
         </div>
+        
       </div>
     </div>
   </div>
