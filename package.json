@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "patika.dev clean blog project",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app"
+  "scripts": {   
+    "start": "node app"
   },
   "repository": {
     "type": "git",

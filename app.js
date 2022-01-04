@@ -8,10 +8,10 @@ const postController = require('./controllers/postController');
 const pageController = require('./controllers/pageController');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 //Connection Database
-mongoose.connect('mongodb://localhost/cleanblog-test-db');
+mongoose.connect('mongodb+srv://barisd:<password>@cleanblog.d2afp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 //Middlewares
 app.use(express.static('public'));
